@@ -1,0 +1,156 @@
+body {
+  background-image: url("/tinder/tinder.webp");
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+html {
+  height: 100vh;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  margin-left: -10px;
+  color: white;
+  font-size: 12px;
+  width: 100%;
+}
+.bgpage {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.322)
+  );
+  padding-bottom: 0px;
+  height: 102vh;
+}
+.logo-color {
+  margin-top: -10px;
+  animation: Colorlogo 5s infinite;
+}
+@keyframes Colorlogo {
+  0% {
+    fill: #fd007f;
+  }
+  50% {
+    fill: #ffffff;
+  }
+  100% {
+    fill: #fd007f;
+  }
+}
+nav {
+  margin-top: -15px;
+  width: 100%;
+  height: 100px;
+}
+.containerflex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.underline-none {
+  display: flex;
+  font-weight: bold;
+  font-family: Sans-serif;
+}
+a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Sans-serif;
+  transition: font-size 0.3s, text-shadow 0.5s;
+}
+a:hover {
+  /* font-size: 20px; */
+  color: #fd007f;
+  text-decoration-line: underline;
+}
+svg {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+}
+.divnav {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  gap: 20px;
+}
+.bgButton {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  padding-inline: 25px;
+  border-radius: 50px;
+}
+.marginbutton {
+  display: flex;
+  margin-right: 30px;
+  gap: 20px;
+  text-decoration-line: none;
+}
+.button-lh{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+  align-items: center;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Sans-serif;
+}
+.svg-scels {
+  width: 30px;
+  height: 30px;
+}
+.bgtextDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  font-size: 55px;
+  color: white;
+}
+.buttonRegister {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to right, hsl(310, 100%, 50%), #ff3213);
+  font-size: 18px;
+  padding-inline: 30px;
+  padding-block: 10px;
+  margin-top: -50px;
+  border: 0cap;
+  border-radius: 16px;
+  animation:pulse512 1.5s infinite;
+  /* transition: font-size 0.5s; */
+}
+.buttonRegister:hover {
+  background: linear-gradient(to right, hsl(310, 100%, 37%), #ad230e);
+  /* font-size: 24px; */
+  /* background-position: right center; */
+  /* background-size: 200% auto; */
+  /* -webkit-animation: pulse 2s infinite; */
+  /* animation: pulse512 1.5s infinite; */
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
